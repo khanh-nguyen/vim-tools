@@ -1,0 +1,24 @@
+" \p to insert <p></p>
+autocmd Filetype html nnoremap <leader>p o<p></p><Esc>2ba
+" \c to insert <pre><code></code></pre>
+autocmd Filetype html nnoremap <leader>c o<pre><Esc>o<code><Esc>o</code><Esc>o</pre><Esc>kO
+" \s to insert <strong></strong>
+autocmd Filetype html nnoremap <leader>s i <strong></strong><Esc>F>a
+" \C to insert <code></code>
+autocmd Filetype html nnoremap <leader>C i <code></code><Esc>F>a
+" \S to insert <span></span>
+autocmd Filetype html nnoremap <leader>S i <span></span><Esc>F>a
+" \o to insert ol and first li
+autocmd Filetype html nnoremap <leader>o o<ol><Esc>o</ol><Esc>O<li></li><Esc>F>a
+" \u to insert ul and first li
+autocmd Filetype html nnoremap <leader>u o<ul><Esc>o</ul><Esc>O<li></li><Esc>F>a
+" \l to insert li
+autocmd Filetype html nnoremap <leader>l o<li></li><Esc>F>a
+" \a to insert link
+autocmd Filetype html nnoremap <leader>a i <a target="_blank" href=""></a><Esc>F"i
+" \d to insert div
+autocmd Filetype html nnoremap <leader>d o <div><Esc>o</div><Esc>O
+" \i to insert image
+autocmd Filetype html nnoremap <leader>i i <img src="" alt=""><Esc>3F"i
+" \h3 to insert h3
+autocmd Filetype html nnoremap <leader>h3 o<h3></h3><Esc>F>a
